@@ -1,4 +1,4 @@
-# nlp
+# Machine learning source
 
 ### Recommendation system:
 * introduction-to-recommendation-python-turicreate.ipynb, a notebook which is to demo the Recommendation System ideas, using python and Apple Turicreate package
