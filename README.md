@@ -1,5 +1,7 @@
 # Machine learning source
 
+### computer_vision
+* this folder includes some examples of computer vision.
 ### Recommendater system
 * introduction-to-recommendation-python-turicreate.ipynb, a notebook which is to demo the Recommendation System ideas, using python and Apple Turicreate package
 
