@@ -133,6 +133,7 @@ TOTAL_AVERAGE_VIEWTIME = data['viewtime'].sum()/data['user_cnt'].sum()
 AVERAGE_USER_CNT = data['user_cnt'].sum()/len(data['user_cnt'])
 TOTAL_AVERAGE_CLICK = data['click_cnt'].sum() / data['user_cnt'].sum()
 # 平均案例浏览时长
+# 加权平均，为了处理有些case用户量很少但是浏览和点击又比较多的情况
 data['self_average_viewtime'] = data['viewtime'] / data['user_cnt']
 data['average_viewtime'] = data['self_average_viewtime'] * data['user_cnt'] / (data['user_cnt'] + AVERAGE_USER_CNT) \
                           + TOTAL_AVERAGE_VIEWTIME * AVERAGE_USER_CNT / (data['user_cnt'] + AVERAGE_USER_CNT)
